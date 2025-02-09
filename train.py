@@ -159,7 +159,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 #Data params
 token_len = 2
 num_seed_words = 3
-data = HoroskopesDataSet('/home/makasin/Projects/Goroskops/horoskopes_wthout_shame/data/horoskopes_sentences.txt', token_len=token_len, seed_words_num=num_seed_words)
+data = HoroskopesDataSet('./data/horoskopes_sentences.txt', token_len=token_len, seed_words_num=num_seed_words)
 
 #Models params
 num_tokens = data.num_tokens
